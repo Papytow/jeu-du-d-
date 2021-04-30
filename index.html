@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeu de dé</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    </head>
+
+    <body>
+        <ion-app>
+            <ion-content class="ion-padding">
+                <ion-grid class="background">
+                        <ion-row>  
+                            <ion-col>
+                                <button id="new-game" class="button">
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                    <ion-label>NEW GAME</ion-label>    
+                                </button>     
+                            </ion-col>
+                        </ion-row>
+                        
+                        <ion-row class="ion-justify-content-around">
+                            <ion-col>
+                                    <div>
+                                        <p class="player-name" style="color: gray;">PLAYER 1<span id="select-player-1" class="select-player">🔴</span></p>
+                                        <p id="score-player-1" class="score-player">0</p>
+                                    </div>
+                                    <div class="current-div-score">
+                                        <p>CURRENT</p>
+                                        <p id="dice-result-1" class="current-score">0</p>
+                                    </div>
+                            </ion-col>
+                            <ion-col>
+                                    <div>
+                                        <ion-img style="width: 10vw; margin: auto;" src="/assets/img/1.png" id="img-result"></ion-img>
+                                    </div>
+                                    <div id="bottom-button">
+                                        <div>
+                                            <button  id="throw-dice" class="button">
+                                                <ion-icon name="refresh-circle-outline"></ion-icon>
+                                                <ion-label>ROLL DICE</ion-label>    
+                                            </button>     
+                                        </div>
+                                        <div>
+                                            <button id="add-to-score" class="button">
+                                                <ion-icon name="download-outline"></ion-icon>
+                                                <ion-label>HOLD</ion-label>    
+                                            </button>   
+                                        </div> 
+                                    </div> 
+                            </ion-col>
+                            <ion-col>
+                                <div>
+                                    <p class="player-name">PLAYER 2<span id="select-player-2" class="select-player">🔴</span></p>
+                                    <p id="score-player-2" class="score-player">0</p>
+                                </div>
+                                <div class="current-div-score">
+                                    <p>CURRENT</p>
+                                    <p id="dice-result-2" class="current-score">0</p>
+                                </div>
+                            </ion-col>
+                        </ion-row> 
+                  </ion-grid>
+            </ion-content>
+          </ion-app>
+
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+     
+    <script src="/script/functions/nextPlayer.js"></script>
+    <script src="/script/functions/checkIfWin.js"></script>
+    <script src="/script/functions/resetScores.js"></script>
+    <script src="/script/functions/newGame.js"></script>
+    <script src="/script/script.js"></script>  
+    
+
+    </body>
+
+</html>
