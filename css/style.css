@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+:root {
+    text-align: center;
+    
+}
+
+ion-content{
+    --background: #fff url('/images/background-app.png') no-repeat center center / cover;
+    font-family: 'Lato', sans-serif;
+
+}
+
+ion-row{
+    margin-top: 1vw;
+}
+
+
+/* Background de l'application' */
+.background{
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* Style des différents bouton de la page */
+.button{
+    font-size: 1.5vw;
+    background-color: transparent;
+    color: rgb(102, 102, 102);
+    margin-bottom: 4vw;
+}
+
+/* Style des icones des boutons */
+.button > ion-icon{
+    color: rgb(255, 104, 104);
+}
+
+/* Style du score total du joueur */
+.player-name{
+    font-size: 3.5vw;
+
+}
+.score-player{
+    color: rgb(255, 104, 104);
+    font-size: 4vw;
+    margin-top: 1vw;
+}
+
+/* Style du score en cours des dés */
+.current-div-score{
+    background-color: rgb(255, 104, 104);
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.5vw;
+}
+.current-score{
+    font-size: 3vw;
+    color: white;
+    margin: 0;
+}
+
+/* Button lancer de dé et ajouter au score */
+#bottom-button{
+    margin-top: 10vw;
+}
+
+.select-player{
+    display: none;
+    margin-left: 2vw;
+    font-size: 2vw;
+}
