@@ -1,4 +1,4 @@
-// Vérifier si le joueur a gagner et changer de joueur si ce n'est pas le cas
+// Vérifier si le joueur a gagner et changer de joueur 
 function checkIfWin() {
 
     if (scores[activePlayer] >= 100) {
